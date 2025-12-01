@@ -46,3 +46,4 @@ Thumbs.db
 # Misc editor swap files
 *.swp
 *.swo
+!/package-lock.json
