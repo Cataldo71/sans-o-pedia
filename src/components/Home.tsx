@@ -1,25 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import SansSprite from '../assets/Sans_Sprite_Vector.png';
 
 const Home: React.FC = () => {
   const [imageError, setImageError] = useState(false);
   const [imageSrc, setImageSrc] = useState('');
 
   useEffect(() => {
-    // Try multiple possible paths
-    const possiblePaths = [
-      `${process.env.PUBLIC_URL}/Sans_Sprite_Vector.webp`,
-      '/Sans_Sprite_Vector.webp',
-      './Sans_Sprite_Vector.webp',
-      '/public/Sans_Sprite_Vector.webp'
-    ];
+    // Use the image from assets (already provided by the user)
+    const possiblePaths = [SansSprite];
 
-    // Test which path works
+    // Test that the image loads correctly
     const testImage = new Image();
     testImage.onload = () => {
       setImageSrc(possiblePaths[0]);
     };
     testImage.onerror = () => {
-      console.error('Could not load image from any path');
+      console.error('Could not load image from assets');
       setImageError(true);
     };
     testImage.src = possiblePaths[0];
