@@ -4,6 +4,7 @@ import Home from './components/Home';
 import AUs from './components/AUs';
 import ATs from './components/ATs';
 import Multiverse from './components/Multiverse';
+import MainHeader from './assets/main header.jpg';
 
 type Section = 'home' | 'aus' | 'ats' | 'multiverse';
 
@@ -27,6 +28,9 @@ function App() {
 
   return (
     <div className="App">
+      <div className="top-banner" role="img" aria-label="Sansopedia site header banner">
+        <img src={MainHeader} alt="Sansopedia header banner" className="top-banner-image" />
+      </div>
       <nav className="navbar">
         <div className="nav-container">
           <h1 className="nav-title">UNDERTALE MULTIVERSE</h1>

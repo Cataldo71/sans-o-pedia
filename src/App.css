@@ -793,3 +793,30 @@
 .nomoredeals .at-subtitle {
   color: #cfa9ff; /* indigo-lilac accent */
 }
+
+
+/* ===== Global Top Banner ===== */
+.top-banner {
+  width: 100%;
+  background: #000; /* fallback behind the image */
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive banner image that behaves like a hero strip */
+.top-banner-image {
+  display: block;
+  width: 100%;
+  height: clamp(120px, 18vw, 280px);
+  /* Preserve aspect ratio; add black letterboxing in the remaining space */
+  object-fit: contain;
+  object-position: center;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated; /* helps retro/pixel-art assets look sharp */
+}
+
+/* Ensure main content doesn't stick to the banner visually */
+.main-content {
+  padding-top: 1rem;
+}
