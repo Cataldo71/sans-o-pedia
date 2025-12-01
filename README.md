@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# Sansopedia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An Undertale-focused reference site that documents fan-made Alternate Universes (AUs) and Alternate Timelines (ATs), alongside core information about the base game. Built with React + TypeScript.
 
-## Available Scripts
+Live features include:
+- A hero section themed around Undertale with a Sans sprite
+- Overview content explaining Undertale, its routes (Neutral, True Pacifist, Genocide), and legacy
+- Dedicated sections/components for AUs and ATs (fan-created variants of the Undertale universe)
 
-In the project directory, you can run:
+> Note: Sansopedia is a community fan project. Undertale and related characters, names, and assets are the property of their respective owners. This site is not affiliated with Toby Fox.
 
-### `npm start`
+## Tech Stack
+- React + TypeScript
+- CSS modules/styles in `src/App.css`
+- Assets served from `public/` and `src/assets/`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
+1. Install dependencies:
+   - `npm install`
+2. Start the development server:
+   - `npm start`
+   - Open http://localhost:3000 in your browser
+3. Build for production:
+   - `npm run build` (outputs to `build/`)
+4. Run tests (if any are added):
+   - `npm test`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Structure
+```
+D:/sansopedia
+├── public/                  # Static files (HTML, images not processed by bundler)
+├── src/
+│   ├── components/
+│   │   ├── Home.tsx        # Landing page with Undertale overview and visuals
+│   │   ├── AUs.tsx         # Alternate Universes listing/view
+│   │   └── ATs.tsx         # Alternate Timelines listing/view
+│   ├── App.tsx             # App entry and routing between sections
+│   ├── App.css             # Global styles
+│   └── assets/             # Project images (e.g., Sans sprite)
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
-### `npm test`
+## Development Notes
+- Image assets: primary Sans sprite located under `src/assets/` and referenced in `Home.tsx`.
+- The UI content emphasizes Undertale routes and community creations (AUs/ATs). Extend `AUs.tsx` and `ATs.tsx` with data sources or links as the project grows.
+- Styling is centralized in `src/App.css`. Prefer class-based styles consistent with existing conventions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Scripts
+- `npm start` — Run the dev server
+- `npm run build` — Production build to `build/`
+- `npm test` — Run tests (if present)
 
-### `npm run build`
+## Roadmap
+- Populate AU/AT pages with structured data (titles, creators, links, tags)
+- Add search and filtering
+- Theming and accessibility improvements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Legal / Attribution
+Undertale © Toby Fox. This is a non-commercial fan project for educational/documentation purposes.
