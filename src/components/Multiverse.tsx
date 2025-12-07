@@ -9,6 +9,11 @@ const Multiverse: React.FC = () => {
       </div>
 
       <div className="content-section">
+        <div className="update-note" role="note" aria-label="Update notice">
+          <p>
+            Ongoing update: More multiverse entries will be added as new figures and interpretations emerge.
+          </p>
+        </div>
         <div className="intro-text">
           <h2>★ Who are AU-/AT-less characters? ★</h2>
           <p>
@@ -103,6 +108,32 @@ const Multiverse: React.FC = () => {
               </div>
               <div className="mv-theme">
                 <strong>Core Idea:</strong> When LOVE exceeds its bounds, power turns volatile—and the multiverse takes notice.
+              </div>
+            </div>
+          </div>
+
+          <div className="mv-card dustdustdust">
+            <div className="mv-header">
+              <h2 className="mv-title">DUSTDUSTDUST</h2>
+              <p className="mv-subtitle">LOVE 380 • Nearly Unstoppable • No AU/AT Affiliation</p>
+            </div>
+            <div className="mv-content">
+              <p className="mv-description">
+                DUSTDUSTDUST is an extreme interpretation of Dust Sans taken far beyond familiar limits: a version
+                who has driven LOVE to <strong>LV 380</strong>. His presence is a red‑and‑violet storm—relentless,
+                calculating, and almost impossible to slow once set in motion.
+              </p>
+              <div className="mv-details">
+                <h4>★ Role in the multiverse:</h4>
+                <ul>
+                  <li><strong>Overwhelming LOVE:</strong> At <em>380 LOVE</em>, ATK/DEF and pressure are orders of magnitude above norms.</li>
+                  <li><strong>Relentless Momentum:</strong> Combos chain with minimal mercy windows; errors compound for his foes.</li>
+                  <li><strong>AU/AT‑less Force:</strong> Exists outside a single world; appears as a roaming cataclysm.</li>
+                  <li><strong>Balance Shockwave:</strong> A presence that even multiversal custodians must plan around.</li>
+                </ul>
+              </div>
+              <div className="mv-theme">
+                <strong>Core Idea:</strong> When LOVE turns absolute, restraint evaporates—and survival becomes statistical.
               </div>
             </div>
           </div>

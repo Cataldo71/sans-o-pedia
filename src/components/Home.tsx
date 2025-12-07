@@ -131,6 +131,54 @@ const Home: React.FC = () => {
             </p>
           </div>
 
+          {/* Canon vs Fanon explanation */}
+          <div className="content-section">
+            <div className="game-description">
+              <h2>Canon vs Fanon in UNDERTALE</h2>
+              <p>
+                <strong>Canon</strong> means what the original work directly shows or states — the text of the game,
+                its dialogue, mechanics, and creator-confirmed facts. <strong>Fanon</strong> is the community’s common
+                interpretation: ideas that many fans accept or repeat because they feel fitting, even if they aren’t
+                stated in the game. Both matter in UNDERTALE’s culture: canon anchors shared understanding, while
+                fanon fuels creative works (art, comics, AUs/ATs) that explore implications and what-ifs. Fanon isn’t
+                bad—it's a sign of community creativity and exploration; just remember it isn’t official.
+              </p>
+              <div className="comparison-grid">
+                <div className="comparison-item">
+                  <h4>📘 Canon</h4>
+                  <p>
+                    • Comes from the game itself (dialogue, encounters, endings) and official creator statements.
+                  </p>
+                  <p>
+                    • Used as the baseline for routes, character motives, and the world’s rules (souls, SAVE/RESET, etc.).
+                  </p>
+                </div>
+                <div className="comparison-item">
+                  <h4>🎨 Fanon</h4>
+                  <p>
+                    • Community consensus or popular headcanons that <em>fit</em> the vibe but aren’t explicitly confirmed.
+                  </p>
+                  <p>
+                    • Great for fanworks and discussion — just remember it’s interpretive, not official.
+                  </p>
+                </div>
+              </div>
+              <h3>★ Example: Sans and Resets</h3>
+              <p>
+                In <strong>canon</strong>, Sans is not shown to remember specific resets or alternate timelines. What he
+                <em>does</em> have is sharp pattern recognition: he reads your behavior, timing, and expressions and draws
+                eerie conclusions. The feeling that he “knows” you across runs is a dramatic effect of the game’s
+                meta-design and his observational skill — not literal memory of other timelines.
+              </p>
+              <p>
+                In <strong>fanon</strong>, people sometimes imagine Sans retaining memories between resets or being fully
+                aware of multiverse mechanics. That’s a valid fan interpretation for stories and AUs/ATs, but it goes
+                beyond what the game confirms. Labeling the difference helps readers know when a work is sticking to
+                canon or exploring creative possibilities.
+              </p>
+            </div>
+          </div>
+
           <h3>★ Impact & Legacy</h3>
           <p>
             UNDERTALE became a cultural phenomenon, praised for its innovative gameplay, emotional storytelling, 
@@ -142,6 +190,183 @@ const Home: React.FC = () => {
           <div className="quote-box">
             <p className="quote">"Despite everything, it's still you."</p>
             <p className="quote-attribution">- The Mirror, UNDERTALE</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Creators information */}
+      <div className="content-section">
+        <div className="game-description">
+          <h2>About the Creators</h2>
+
+          <h3>★ Toby Fox</h3>
+          <p>
+            Toby Fox is the creator of UNDERTALE — serving as its designer, writer, composer, and primary programmer.
+            He is known for weaving character themes and melodies across the soundtrack to reinforce story and emotion.
+            After UNDERTALE (2015), he began releasing chapters of his follow‑up project, <strong>DELTARUNE</strong>.
+          </p>
+          <ul className="features-list">
+            <li>
+              <strong>Roles:</strong> Game design, narrative, music composition, and implementation; UNDERTALE was
+              developed with a very small team and community contributors.
+            </li>
+            <li>
+              <strong>Music highlights:</strong> Iconic tracks such as "Megalovania", "Hopes and Dreams", and
+              "ASGORE" showcase his use of leitmotifs and energetic chiptune‑inspired writing.
+            </li>
+            <li>
+              <strong>Other work:</strong> Has contributed music to projects outside UNDERTALE/DELTARUNE, including
+              tracks for Game Freak titles and indie collaborations.
+            </li>
+          </ul>
+
+          <h3>★ Temmie Chang</h3>
+          <p>
+            Temmie Chang is the lead artist and animator for UNDERTALE. Her expressive character art, sprites, and UI
+            details helped define the game’s distinct look and charm. She continues to contribute art and animation to
+            <strong> DELTARUNE</strong> as well.
+          </p>
+          <ul className="features-list">
+            <li>
+              <strong>Roles:</strong> Character/monster designs, sprite work, portraits, cinematic moments, and visual
+              polish throughout the game.
+            </li>
+            <li>
+              <strong>Style:</strong> Emphasis on readable silhouettes, expressive poses, and humor — influencing how
+              fans depict characters across AUs and ATs.
+            </li>
+            <li>
+              <strong>Community favorites:</strong> The in‑game shopkeeper "Temmie" and the running dog gags are playful
+              nods associated with her name and art sensibility.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Community portrayal across media */}
+      <div className="content-section">
+        <div className="game-description">
+          <h2>How the Community Portrays UNDERTALE Across Media</h2>
+          <p>
+            UNDERTALE’s fandom is huge and creative. Fans re‑imagine scenes, expand lore, and interpret
+            characters through many formats. Here’s a quick tour of the most common types of fan works
+            you’ll see around the community.
+          </p>
+
+          <h3>★ Videos</h3>
+          <ul className="features-list">
+            <li>
+              <strong>Animations & animatics:</strong> Key moments (boss fights, jokes, emotional reveals)
+              are storyboarded or fully animated, often synced to soundtrack remixes like “Megalovania”.
+            </li>
+            <li>
+              <strong>AMVs/edits:</strong> Character‑focused edits highlight arcs (e.g., Sans vs. the player,
+              Papyrus’s optimism) using energetic cuts and text overlays.
+            </li>
+            <li>
+              <strong>Analysis & video essays:</strong> Deep dives into themes (mercy, consequence, meta‑narrative),
+              routes, and timeline theories.
+            </li>
+            <li>
+              <strong>Let’s Plays & challenge runs:</strong> Pacifist first‑runs, blind Genocide routes, no‑hit
+              boss challenges—usually with spoiler etiquette in titles/descriptions.
+            </li>
+          </ul>
+
+          <h3>★ Fan Art</h3>
+          <ul className="features-list">
+            <li>
+              <strong>Style variety:</strong> From pixel art that mirrors the game to painterly, manga, or
+              stylized takes that push expressions, silhouettes, and color motifs.
+            </li>
+            <li>
+              <strong>Character studies:</strong> Sans, Papyrus, Frisk/Chara, Undyne, Alphys, Asgore/Asriel, and
+              lesser‑seen monsters are explored with different emotions, outfits, and timelines.
+            </li>
+            <li>
+              <strong>Scene reinterpretations:</strong> Iconic lines and battles are redrawn with alternate lighting,
+              camera angles, or "what‑if" outcomes.
+            </li>
+          </ul>
+
+          <h3>★ Comics & Doujinshi</h3>
+          <ul className="features-list">
+            <li>
+              <strong>Short strips:</strong> Daily life jokes (especially with the skeleton bros) and character
+              banter are common.
+            </li>
+            <li>
+              <strong>Long‑form stories:</strong> Multi‑chapter comics explore alternate choices, missing scenes,
+              or post‑game epilogues; many blend humor with serious themes.
+            </li>
+          </ul>
+
+          <h3>★ Music & Audio</h3>
+          <ul className="features-list">
+            <li>
+              <strong>Remixes & rearrangements:</strong> Chiptune, orchestral, metal, lo‑fi, jazz—every OST track
+              has multiple fan arrangements.
+            </li>
+            <li>
+              <strong>Vocal covers & original songs:</strong> Lyrics built around character viewpoints or route
+              emotions are popular on streaming sites.
+            </li>
+            <li>
+              <strong>Sound design experiments:</strong> Mashups and motif swaps (e.g., character themes traded between
+              scenes) to explore narrative parallels.
+            </li>
+          </ul>
+
+          <h3>★ Fangames, AUs, and ATs</h3>
+          <ul className="features-list">
+            <li>
+              <strong>AUs (Alternate Universes):</strong> Canon re‑imagined with a core twist (setting, tone, roles).
+              Visual design and character dynamics change to fit the new premise.
+            </li>
+            <li>
+              <strong>ATs (Alternate Timelines):</strong> Canon events diverge at a specific decision point;
+              consequences ripple without altering the universe’s base rules.
+            </li>
+            <li>
+              <strong>Playable fangames & mods:</strong> From small encounters to full routes; many credit inspirations
+              and share progress via devlogs and demo builds.
+            </li>
+          </ul>
+
+          <h3>★ Memes and Micro‑formats</h3>
+          <ul className="features-list">
+            <li>
+              <strong>Image macros & redraws:</strong> Screenshots with captions, or panels redrawn in trending styles.
+            </li>
+            <li>
+              <strong>Short‑form video:</strong> Quick gags using in‑game sound effects, jump‑cuts, and text‑to‑speech.
+            </li>
+            <li>
+              <strong>Copypastas & AU prompts:</strong> Prompt chains spark collaborative world‑building in threads.
+            </li>
+          </ul>
+
+          <h3>★ Live Streams, Roleplay, and Cosplay</h3>
+          <ul className="features-list">
+            <li>
+              <strong>Streaming:</strong> First‑time playthroughs emphasize spoiler‑free chat; challenge streams showcase
+              mastery of patterns and routing.
+            </li>
+            <li>
+              <strong>Roleplay (text or live):</strong> In‑character banter explores personalities and moral questions,
+              often crossing AUs/ATs.
+            </li>
+            <li>
+              <strong>Cosplay & props:</strong> Skeleton makeup, glowing soul props, bone/blue magic VFX, and con skits.
+            </li>
+          </ul>
+
+          <div className="replay-insight">
+            <p>
+              <strong>Community norms:</strong> Credit original creators, use spoiler tags for late‑game content, add
+              content warnings where appropriate, and respect boundaries around ships/ages. Many creators allow non‑commercial
+              sharing with attribution—always check their terms before remixing or reposting.
+            </p>
           </div>
         </div>
       </div>

@@ -9,6 +9,11 @@ const AUs: React.FC = () => {
       </div>
 
       <div className="content-section">
+        <div className="update-note" role="note" aria-label="Update notice">
+          <p>
+            Ongoing update: More AUs will be added as new universes are created and shared by the community.
+          </p>
+        </div>
         <div className="intro-text">
           <h2>★ What are Alternate Universes? ★</h2>
           <p>
@@ -45,6 +50,39 @@ const AUs: React.FC = () => {
             <p>
               The result is a <strong>massive, interconnected multiverse</strong> of creativity that has kept UNDERTALE's 
               spirit alive and growing years after the original game's release.
+            </p>
+          </div>
+        </div>
+
+        {/* Canon vs Fanon note (formatted like Home) */}
+        <div className="content-section" aria-label="Canon vs Fanon in AUs">
+          <div className="game-description">
+            <h2>Canon vs Fanon in AUs</h2>
+            <p>
+              <strong>Canon</strong> is what an AU’s original creators explicitly present — their posts, comics,
+              games, and stated rules. <strong>Fanon</strong> is the community’s common interpretation: widely shared
+              portrayals or headcanons that feel fitting even if they aren’t creator-confirmed. Both are important:
+              canon anchors what the AU intends, while fanon fuels remixing and exploration across the fandom. Fanon
+              isn’t bad — it reflects community creativity and experimentation; just keep in mind it isn’t official.
+            </p>
+            <div className="comparison-grid">
+              <div className="comparison-item">
+                <h4>📘 Canon</h4>
+                <p>• Comes from the AU’s creators (official posts, releases, reference sheets, stated rules).</p>
+                <p>• Forms the baseline for designs, abilities, tone, and how the AU’s world operates.</p>
+              </div>
+              <div className="comparison-item">
+                <h4>🎨 Fanon</h4>
+                <p>• Community portrayals and headcanons that aren’t explicitly confirmed by the creators.</p>
+                <p>• Great for fanworks — just remember it’s interpretive, not official.</p>
+              </div>
+            </div>
+            <h3>★ Example: Storyshift Chara and Knives</h3>
+            <p>
+              In <strong>CANON Storyshift</strong>, <strong>Chara does not use knives as attacks</strong>.
+              However, their <strong>FANON</strong> depiction is often shown <strong>using knives regularly</strong>.
+              This page aims to call out such distinctions where relevant so readers know when a detail is
+              creator-established or a popular community interpretation.
             </p>
           </div>
         </div>
@@ -107,6 +145,37 @@ const AUs: React.FC = () => {
               <div className="au-theme">
                 <strong>Core Theme:</strong> Even gods must grapple with love, loss, duty, and the meaning 
                 of existence. Power doesn't eliminate pain—it just makes the stakes higher.
+              </div>
+            </div>
+          </div>
+
+          {/* Dreamtale */}
+          <div className="au-card dreamtale-card">
+            <div className="au-header">
+              <h2 className="au-title">DREAMTALE</h2>
+              <p className="au-subtitle">Brothers of Hope and Nightmare</p>
+            </div>
+            <div className="au-content">
+              <p className="au-description">
+                In this universe, two brothers stand at the heart of emotions themselves: <strong>Dream!Sans</strong>,
+                a guardian born from hope and positive wishes, and <strong>Nightmare!Sans</strong>, once kind but
+                tragically <strong>corrupted into a force of concentrated negativity</strong>. Nightmare seeks to
+                spread terror and despair—sometimes across entire worlds—while Dream strives to protect others and
+                mend what’s been broken. Both are commonly portrayed as <strong>aware of the multiverse</strong> and
+                able to <strong>travel between universes</strong>.
+              </p>
+              <div className="au-details">
+                <h4>★ Key Details:</h4>
+                <ul>
+                  <li><strong>Dream!Sans:</strong> Embodies hope; supportive, gentle, often seen with star or bow motifs and a calming presence.</li>
+                  <li><strong>Nightmare!Sans:</strong> Corrupted by negativity; manifests dark tendrils/aura; seeks to sow fear, control, and ruin.</li>
+                  <li><strong>Brotherhood Shattered:</strong> Once close siblings; a tragic event twisted their bond into an ideological war.</li>
+                  <li><strong>Multiversal Reach:</strong> Both are depicted as <em>multiverse-aware travelers</em>, intervening in or exploiting other AUs.</li>
+                  <li><strong>Conflict Lens:</strong> Hope vs. despair; consent vs. manipulation; healing vs. domination.</li>
+                </ul>
+              </div>
+              <div className="au-theme">
+                <strong>Core Theme:</strong> Even when darkness grows loud, a single light can guide others back to themselves.
               </div>
             </div>
           </div>

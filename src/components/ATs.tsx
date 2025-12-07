@@ -9,6 +9,11 @@ const ATs: React.FC = () => {
       </div>
 
       <div className="content-section">
+        <div className="update-note" role="note" aria-label="Update notice">
+          <p>
+            Ongoing update: More ATs will be added over time as new timelines are created and shared.
+          </p>
+        </div>
         <div className="intro-text">
           <h2>★ What are Alternate Timelines? ★</h2>
           <p>
@@ -54,7 +59,106 @@ const ATs: React.FC = () => {
           </div>
         </div>
 
+        {/* Canon vs Fanon (formatted like Home/AUs) */}
+        <div className="content-section" aria-label="Canon vs Fanon in ATs">
+          <div className="game-description">
+            <h2>Canon vs Fanon in ATs</h2>
+            <p>
+              <strong>Canon</strong> refers to what an AT’s original creators explicitly show or state in their
+              works (posts, comics, releases, reference sheets). <strong>Fanon</strong> describes popular community
+              portrayals and headcanons that feel fitting but aren’t creator-confirmed. Both are useful: canon
+              anchors the intended timeline, while fanon explores possibilities many fans enjoy. Fanon isn’t bad —
+              it’s a sign of community creativity and exploration; just remember it isn’t official.
+            </p>
+            <div className="comparison-grid">
+              <div className="comparison-item">
+                <h4>📘 Canon</h4>
+                <p>• Comes from the AT’s creators and official materials.</p>
+                <p>• Baseline for character behavior, events, and rules within that timeline.</p>
+              </div>
+              <div className="comparison-item">
+                <h4>🎨 Fanon</h4>
+                <p>• Community interpretations that aren’t explicitly confirmed by the creators.</p>
+                <p>• Great for fanworks—just note it’s interpretive, not official.</p>
+              </div>
+            </div>
+            <h3>★ Example: Dusttale and the Scarf</h3>
+            <p>
+              In <strong>FANON Dusttale</strong>, it’s common to depict Sans <strong>putting on Papyrus’ scarf</strong>
+              after killing him. In <strong>CANON Dusttale</strong>, Sans <em>does not</em> do this. Calling out the
+              difference helps readers know when a portrayal is creator-established or a popular community motif.
+            </p>
+          </div>
+        </div>
+
         <div className="ats-grid">
+          {/* UNDERTALE: SOMETHING NEW */}
+          <div className="at-card somethingnew">
+            <div className="at-header">
+              <h2 className="at-title">UNDERTALE: SOMETHING NEW</h2>
+              <p className="at-subtitle">Beyond Monster and Human</p>
+            </div>
+            <div className="at-content">
+              <p className="at-description">
+                In this timeline, Sans strikes a <strong>deal with Chara</strong> and accepts a transformation that makes him
+                <strong> neither human nor monster</strong>—but something entirely new. The bargain alters the rules governing
+                his SOUL and body, introducing unfamiliar abilities and limits that unsettle the Underground. <strong>Only three
+                beings remain in this timeline: you, Chara, and Sans</strong>—a stark isolation that raises the stakes of every
+                choice. With no witnesses and nowhere to retreat, every action becomes a statement about mercy, justice,
+                and identity.
+              </p>
+              <div className="at-details">
+                <h4>★ Key Elements:</h4>
+                <ul>
+                  <li><strong>Last Three Standing:</strong> The world has collapsed to just three beings—<em>you</em>,
+                    <em> Chara</em>, and <em>Sans</em>—intensifying isolation and moral pressure.</li>
+                  <li><strong>Divergence Point:</strong> Sans willingly makes a pact with Chara, accepting a form outside known categories.</li>
+                  <li><strong>New Nature:</strong> Neither human nor monster—hybridized rules for SOUL integrity, damage, and regeneration.</li>
+                  <li><strong>Power and Cost:</strong> Unique abilities (unstable gravity fields, fracturing bone constructs) balanced by risks to self and timeline stability.</li>
+                  <li><strong>Arsenal:</strong> Killer Sans employs <em>knives</em> and <em>slash‑type</em> attacks as signature patterns.</li>
+                  <li><strong>Moral Tension:</strong> Was the bargain a necessary evolution or a dangerous surrender of boundaries?</li>
+                  <li><strong>Empty World:</strong> No bystanders remain; consequences are intimate, immediate, and inescapable.
+                  </li>
+                </ul>
+              </div>
+              <div className="at-theme">
+                <strong>Core Theme:</strong> When identity shifts beyond familiar labels, ethics must find new footing.
+              </div>
+            </div>
+          </div>
+
+          {/* Dustbelief */}
+          <div className="at-card dustbelief">
+            <div className="at-header">
+              <h2 className="at-title">DUSTBELIEF</h2>
+              <p className="at-subtitle">The Timeline of Broken Brothers</p>
+            </div>
+            <div className="at-content">
+              <p className="at-description">
+                In this divergence, Sans begins a genocide route—driven by despair and a warped sense of
+                justice—but is stopped partway through by Papyrus. Sans dies. His spirit lingers, whispering
+                from the edge of SAVE files and RESET echoes, coercing Papyrus to continue what he started.
+                Hope and kindness meet guilt and pressure as Papyrus is pushed toward atrocities he never
+                would have chosen on his own.
+              </p>
+              <div className="at-details">
+                <h4>★ Key Elements:</h4>
+                <ul>
+                  <li><strong>Divergence Point:</strong> Sans initiates the killings; Papyrus stops him, resulting in Sans's death.</li>
+                  <li><strong>Haunting Influence:</strong> Sans returns as a disembodied presence, pressuring Papyrus to carry on the genocide.</li>
+                  <li><strong>Papyrus's Descent:</strong> Internal conflict between his innate compassion and fraternal duty.</li>
+                  <li><strong>Moral Themes:</strong> Coercion, grief, and the erosion of ideals under the weight of loss.</li>
+                  <li><strong>Borrowed Arsenal:</strong> Sans — and later Papyrus — can wield the powers of monsters they've killed (e.g., Toriel’s fire, Undyne’s spears).</li>
+                  <li><strong>Phantom Attack:</strong> Sans manifests as a ghostly attacker, striking with the usual white/blue bone patterns.</li>
+                  <li><strong>Battle Flavor:</strong> Attacks blend bone patterns with guilt‑laden warnings and hesitations.</li>
+                </ul>
+              </div>
+              <div className="at-theme">
+                <strong>Core Theme:</strong> When love becomes pressure, even the brightest souls can dim.
+              </div>
+            </div>
+          </div>
+
           <div className="at-card dusttale">
             <div className="at-header">
               <h2 className="at-title">DUSTTALE</h2>
@@ -74,6 +178,8 @@ const ATs: React.FC = () => {
                   <li>Features "Murder Sans" - a corrupted version gaining LOVE through killing</li>
                   <li>Explores themes of moral corruption and the cycle of violence</li>
                   <li>The Underground becomes a wasteland as Sans eliminates its inhabitants</li>
+                  <li>Absorbed attacks: Sans uses the abilities of monsters he’s killed (Toriel’s fire, Undyne’s spears, etc.)</li>
+                  <li>Phantom attack: Papyrus can manifest as a phantom that assaults the player with red bone patterns.</li>
                   <li>Iconic track: "Megalovania (Dusttale Mix)"</li>
                 </ul>
               </div>
@@ -100,11 +206,20 @@ const ATs: React.FC = () => {
                 <h4>★ Key Elements:</h4>
                 <ul>
                   <li>A starving Underground where food is the ultimate currency</li>
-                  <li>Sans suffers from severe head trauma and memory issues</li>
+                  <li>Sans is perpetually hungry and increasingly brutal; the scent of food can trigger a violent frenzy</li>
                   <li>Papyrus tries desperately to maintain hope and normalcy</li>
                   <li>Undyne becomes the ruthless ruler, making harsh survival decisions</li>
                   <li>Toriel runs a dark version of her pie shop</li>
                   <li>Explores themes of survival, desperation, and moral decay</li>
+                  <li>Horrortale Sans’s attack patterns lean into short, savage bursts; when “food” is near, he turns erratic and relentless</li>
+                </ul>
+              </div>
+              <div className="at-details">
+                <h4>★ Sans — Lore & Attack Patterns</h4>
+                <ul>
+                  <li><strong>Lore:</strong> A scarred survivor driven by gnawing hunger; mercy erodes under constant scarcity.</li>
+                  <li><strong>Trigger:</strong> The smell or promise of food pushes him into a frenzy — tempo spikes, restraint drops.</li>
+                  <li><strong>Pattern:</strong> Brutal, high‑pressure openings (bones/blasters/gravity feints), then ragged attrition; near food, bursts chain with minimal warning.</li>
                 </ul>
               </div>
               <div className="at-theme">
@@ -120,20 +235,30 @@ const ATs: React.FC = () => {
             </div>
             <div className="at-content">
               <p className="at-description">
-                In this timeline, Sans faces his ultimate challenge during a genocide route, but he's not alone. 
-                A mysterious figure known as "The Man Who Speaks in Hands" - strongly implied to be W.D. Gaster - 
-                provides Sans with assistance in his final battle. This creates an epic, multi-phase encounter 
-                that pushes both Sans and the human to their absolute limits.
+                In this telling, Sans is <strong>healed by W.D. Gaster</strong> after being pushed past his limits — and, to
+                keep him alive, Gaster <strong>gradually takes control</strong> of Sans’s body during the fight. The result is an
+                erratic, multi‑phase battle where patterns turn <strong>chaotic and randomized</strong>, punctuated by reality‑warps
+                that <strong>flip the screen</strong> or even <strong>spin the arena</strong>. It’s a last stand sustained by borrowed time and
+                a scientist’s cold determination.
               </p>
               <div className="at-details">
                 <h4>★ Key Elements:</h4>
                 <ul>
-                  <li>Extended, multi-phase Sans boss fight with enhanced abilities</li>
-                  <li>Gaster's mysterious intervention and assistance</li>
-                  <li>Sans pushes beyond his normal limits with determination</li>
-                  <li>Features incredible fan-made music and battle mechanics</li>
-                  <li>Explores the bond between Sans and Gaster</li>
-                  <li>Epic final stand against the genocide route</li>
+                  <li><strong>Gaster’s Role:</strong> W.D. Gaster first <em>heals</em> Sans, then <em>assumes partial control</em> to keep him alive.</li>
+                  <li><strong>Chaotic Patterns:</strong> Attacks feel <em>randomized</em> with abrupt tempo shifts and unstable gravity.</li>
+                  <li><strong>Reality Distortions:</strong> Phases may <em>flip the screen upside‑down</em> or <em>rotate/spin</em> the battlefield.</li>
+                  <li><strong>Multi‑Phase Escalation:</strong> Each phase raises risk as control shifts further from Sans to Gaster.</li>
+                  <li><strong>Tension:</strong> Survival versus autonomy — staying alive costs Sans more of himself.</li>
+                  <li><strong>Presentation:</strong> Fan works emphasize glitch motifs, fractured UI, and disorienting camera tricks.</li>
+                </ul>
+              </div>
+              <div className="at-details">
+                <h4>★ Sans — Lore & Attack Patterns</h4>
+                <ul>
+                  <li><strong>Lore:</strong> Sans is patched up by Gaster; ongoing <em>external control</em> maintains his body at the brink.</li>
+                  <li><strong>Control Window:</strong> When vitals crash, Gaster <em>overrides</em> Sans — power rises, autonomy drops.</li>
+                  <li><strong>Pattern:</strong> Bursts of <em>chaotic</em> bones/blasters, jagged timings, gravity feints; phases rarely repeat.</li>
+                  <li><strong>Anomalies:</strong> Arena <em>inversion</em> (upside‑down) or <em>rotation/spin</em> forces re‑learning movement mid‑attack.</li>
                 </ul>
               </div>
               <div className="at-theme">
@@ -197,6 +322,47 @@ const ATs: React.FC = () => {
               </div>
               <div className="at-theme">
                 <strong>Core Theme:</strong> When confronted with erasure, choosing to fight asserts that meaning is made—not bargained—even when facing a force rather than a villain.
+              </div>
+            </div>
+          </div>
+
+          {/* UNDERTALE: THE THOUGHT */}
+          <div className="at-card thethought" aria-label="UNDERTALE: THE THOUGHT card">
+            <div className="at-header">
+              <h2 className="at-title">UNDERTALE: THE THOUGHT</h2>
+              <p className="at-subtitle">Sevenfold Power • A Mind Like a Prism</p>
+            </div>
+            <div className="at-content">
+              <p className="at-description">
+                In this Alternate Timeline, Sans turns the tables: he <strong>seizes the human’s SOUL</strong> and then
+                <strong> absorbs the six human SOULs</strong> trapped in the Underground. Transformed by the full spectrum of
+                human determination, he becomes an overwhelming force whose attacks refract through memories of the
+                <em> items the fallen humans used</em> — each color channeling a different style of assault.
+              </p>
+              <div className="at-details">
+                <h4>★ Key Elements:</h4>
+                <ul>
+                  <li><strong>Divergence Point:</strong> Sans takes the human’s SOUL before the final confrontation, then draws in the other six.</li>
+                  <li><strong>Sevenfold Ascension:</strong> With all seven human SOULs, Sans’s power and persistence surge beyond any prior fight.</li>
+                  <li><strong>Item‑Themed Arsenal:</strong> Attacks mirror the humans’ gear: <em>Toy Knife</em> slashes, 
+                    <em>Tough Glove</em> multi‑hit jabs, <em>Ballet Shoes</em> rhythm combos, <em>Torn Notebook</em> erratic scribble arcs, 
+                    <em>Burnt Pan</em> sizzling splash shots, and <em>Toy Gun</em> precise yellow‑beam volleys.</li>
+                  <li><strong>Color Motifs:</strong> A <em>rainbow of SOUL hues</em> infuses patterns: gravity shifts, blue/orange mixups, green guard tests,
+                    yellow tracking beams, purple maze lanes, and red pressure phases.</li>
+                  <li><strong>Stakes:</strong> Mercy windows shrink as phases prism‑shift; determination cuts both ways, threatening collapse if overused.</li>
+                </ul>
+              </div>
+              <div className="at-details">
+                <h4>★ Sans — Lore & Attack Patterns</h4>
+                <ul>
+                  <li><strong>Lore:</strong> A mind sharpened to a single thesis: end the cycle. The seven SOULs amplify insight and burden alike.</li>
+                  <li><strong>Pattern:</strong> Rapid color‑coded sequences: bone runs that change on contact color, blasters that split into spectral beams,
+                    item‑themed gimmicks between phases, and brief bullet‑hell prisms that rotate lanes.</li>
+                  <li><strong>Presentation:</strong> UI and arena subtly tint per phase, with a soft <em>prismatic shimmer</em> during transitions.</li>
+                </ul>
+              </div>
+              <div className="at-theme">
+                <strong>Core Theme:</strong> Power refracted through memory — when every color of determination shines at once, what remains of choice?
               </div>
             </div>
           </div>

@@ -42,13 +42,175 @@
 }
 
 .horrortale {
-  border-color: #4d004d;
-  background: linear-gradient(135deg, rgba(30, 0, 30, 0.9), rgba(80, 20, 80, 0.8));
+  /* Dark red scheme for Horrortale */
+  border-color: #7a0000;
+  background: linear-gradient(135deg, rgba(40, 0, 0, 0.92), rgba(90, 0, 0, 0.85));
 }
 
 .lastbreath {
-  border-color: #0066cc;
+  border-color: #ffd700; /* yellow outline for Last Breath */
   background: linear-gradient(135deg, rgba(0, 20, 50, 0.9), rgba(20, 40, 100, 0.8));
+}
+
+/* THE THOUGHT — rainbow theme */
+.thethought {
+  /* Create a rounded gradient border using background-clip technique */
+  border: 3px solid transparent; /* allow gradient to show through the border-box */
+  background:
+    linear-gradient(135deg, rgba(8, 8, 12, 0.92), rgba(24, 24, 36, 0.9)) padding-box,
+    linear-gradient(90deg,
+      #ff004c 0%,
+      #ff7a00 16%,
+      #ffd400 32%,
+      #3ddc97 48%,
+      #00a3ff 64%,
+      #7a5cff 80%,
+      #ff4dff 100%) border-box,
+    radial-gradient(1200px 600px at -10% -10%, rgba(255,255,255,0.07), transparent 40%) padding-box;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.04) inset, 0 10px 25px rgba(0,0,0,0.55);
+}
+
+.thethought .at-header {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.thethought .at-title {
+  background: linear-gradient(90deg,
+    #ff004c 0%,
+    #ff7a00 16%,
+    #ffd400 32%,
+    #3ddc97 48%,
+    #00a3ff 64%,
+    #7a5cff 80%,
+    #ff4dff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none; /* gradient text stays crisp */
+}
+
+.thethought .at-subtitle {
+  color: #d7d7ff;
+  opacity: 0.9;
+}
+
+.thethought:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* AFTERTALE theme — primarily white with red text and outline */
+.aftertale {
+  border-color: #cc0000; /* red outline */
+  background: #ffffff;   /* white card */
+  color: #b30000;        /* red body text */
+}
+
+.aftertale .at-header {
+  border-bottom: 2px solid rgba(204, 0, 0, 0.35); /* subtle red divider */
+}
+
+.aftertale .at-title {
+  color: #cc0000; /* red title text */
+  text-shadow: none; /* keep crisp on white */
+}
+
+.aftertale .at-subtitle {
+  color: #cc0000; /* red subtitle text */
+}
+
+/* Dustbelief theme */
+.dustbelief {
+  border-color: #ffaa33; /* warm amber to suggest fading hope */
+  background: linear-gradient(135deg, rgba(40, 20, 0, 0.9), rgba(80, 40, 10, 0.85));
+}
+
+/* TS!Underswap (TeamSwitched) — light gray card with reddish‑orange accents */
+.ts-underswap {
+  border-color: #ff6a3d; /* reddish‑orange outline */
+  background: linear-gradient(135deg, rgba(252, 252, 252, 0.98), rgba(238, 238, 238, 0.96)); /* light gray card */
+  color: #1f1f1f; /* ensure readable default text on light background */
+}
+
+.ts-underswap .at-header {
+  border-bottom: 2px solid rgba(255, 106, 61, 0.35); /* warm divider */
+}
+
+.ts-underswap .at-title {
+  color: #e65125; /* reddish‑orange title */
+  text-shadow: none; /* keep crisp on light bg */
+}
+
+.ts-underswap .at-subtitle {
+  color: #7a3a2a; /* muted warm subtitle */
+}
+
+.ts-underswap .at-description {
+  color: #2d2d2d; /* darker body copy for contrast */
+}
+
+.ts-underswap .at-details h4 {
+  color: #e86f44; /* heading accent */
+}
+
+.ts-underswap .at-details li {
+  color: #333; /* darker list text */
+}
+
+.ts-underswap .at-details li::before {
+  color: #ff6a3d; /* chevron bullets match accent */
+}
+
+.ts-underswap .at-theme {
+  background: rgba(255, 106, 61, 0.08); /* subtle warm panel */
+  border-left: 4px solid #ff6a3d; /* accent bar */
+  color: #2a2a2a;
+}
+
+/* GG! Underfell — red & orange theme (card + outline) */
+.gg-underfell {
+  border-color: #ff3b1f; /* hot reddish‑orange outline */
+  background: linear-gradient(135deg, rgba(45, 0, 0, 0.92), rgba(95, 25, 0, 0.88)); /* deep red → ember orange */
+}
+
+.gg-underfell .at-header {
+  border-bottom: 2px solid rgba(255, 90, 40, 0.35); /* warm divider */
+}
+
+.gg-underfell .at-title {
+  color: #ff7a3c; /* vivid orange accent */
+  text-shadow: 0 0 10px rgba(255, 122, 60, 0.35);
+}
+
+.gg-underfell .at-subtitle {
+  color: #ffb88f; /* soft orange-pink for readability */
+}
+
+.gg-underfell .at-description {
+  color: #ffe6df; /* warmer body copy on dark red */
+}
+
+.gg-underfell .at-details h4 {
+  color: #ffd166; /* golden heading accent pairs with orange */
+}
+
+.gg-underfell .at-details li {
+  color: #f0d6cf; /* readable list text */
+}
+
+.gg-underfell .at-details li::before {
+  color: #ff6a3d; /* chevron bullets match accent */
+}
+
+.gg-underfell .at-theme {
+  background: rgba(255, 100, 50, 0.08); /* subtle warm tint */
+  border-left: 4px solid #ff6a3d; /* orange accent bar */
+}
+
+/* UNDERTALE: SOMETHING NEW theme */
+.somethingnew {
+  border-color: #cc0000; /* red outline as requested */
+  background: linear-gradient(135deg, rgba(5, 25, 35, 0.9), rgba(35, 10, 35, 0.85));
 }
 
 .at-header {
@@ -70,11 +232,28 @@
 }
 
 .horrortale .at-title {
-  color: #cc66cc;
+  color: #ff5c5c;
+}
+
+/* Improve Horrortale header/subtitle accents for dark‑red theme */
+.horrortale .at-header {
+  border-bottom: 2px solid rgba(204, 51, 51, 0.4);
+}
+
+.horrortale .at-subtitle {
+  color: #ff9999;
 }
 
 .lastbreath .at-title {
   color: #66ccff;
+}
+
+.dustbelief .at-title {
+  color: #ffdd99;
+}
+
+.somethingnew .at-title {
+  color: #cc0000; /* make the title text red */
 }
 
 .at-subtitle {
@@ -222,6 +401,123 @@
   }
 }
 
+/* --- Layout: Sidebar + Content --- */
+.app-header {
+  padding: 1rem 1.5rem;
+  background: linear-gradient(90deg, rgba(10,10,20,0.95), rgba(30,30,60,0.85));
+  border-bottom: 3px solid rgba(255,255,255,0.1);
+}
+
+.site-title {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.layout {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  min-height: calc(100vh - 160px);
+}
+
+.sidebar {
+  width: 240px;
+  flex: 0 0 240px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(20,20,40,0.85));
+  border-right: 2px solid rgba(255,255,255,0.1);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: calc(100vh - 160px);
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.side-nav-button {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 700;
+}
+
+.side-nav-button:hover {
+  transform: translateX(3px);
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.4);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+.side-nav-button.active {
+  background: linear-gradient(90deg, rgba(153,102,255,0.35), rgba(255,102,153,0.25));
+  border-color: #9966ff;
+}
+
+.content {
+  flex: 1 1 auto;
+  padding: 1.5rem;
+  overflow: auto;
+}
+
+/* Footer spacing improvements */
+.footer {
+  padding: 1rem 1.5rem;
+  border-top: 2px solid rgba(255,255,255,0.1);
+  background: rgba(10,10,20,0.85);
+}
+
+/* Small notice banner used at the top of sections to indicate ongoing updates */
+.update-note {
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 4px solid #ffff99;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin: 1rem 0 1.5rem 0;
+  text-align: left;
+}
+
+.update-note p {
+  margin: 0;
+  color: #eeeeee;
+  font-size: 0.95rem;
+}
+
+/* Responsive: collapse sidebar on small screens */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+    min-height: unset;
+  }
+  .sidebar {
+    width: 100%;
+    flex: 0 0 auto;
+    position: static;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+  }
+  .side-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .side-nav-button {
+    flex: 1 1 calc(50% - 0.5rem);
+    text-align: center;
+  }
+}
+
 @media (max-width: 480px) {
   .ending-card {
     padding: 1rem;
@@ -241,7 +537,7 @@
 }
 
 .horrortale .at-details li::before {
-  color: #cc66cc;
+  color: #cc3333;
 }
 
 .lastbreath .at-details li::before {
@@ -256,39 +552,95 @@
   font-style: italic;
 }
 
-/* Aftertale Styling */
+/* AFTERTALE theme — primarily white with red text and outline (overrides older styles below) */
 .aftertale {
-  border: 3px solid #66cc99;
-  background: linear-gradient(135deg, rgba(20, 60, 40, 0.9), rgba(40, 100, 60, 0.8));
+  border: 3px solid #cc0000; /* red outline */
+  background: #ffffff;       /* white card */
+  color: #b30000;            /* red body text */
 }
 
 .aftertale .at-title {
-  color: #99ffcc;
-  text-shadow: 0 0 15px rgba(102, 204, 153, 0.6);
+  color: #cc0000;            /* red title */
+  text-shadow: none;         /* crisp on white */
 }
 
 .aftertale .at-subtitle {
-  color: #ccffdd;
+  color: #cc0000;            /* red subtitle */
 }
 
 .aftertale .at-theme {
-  background: rgba(0, 50, 30, 0.4);
-  border-left-color: #66cc99;
+  background: rgba(204, 0, 0, 0.08); /* subtle red tint panel */
+  border-left-color: #cc0000;        /* red accent bar */
+}
+
+/* Improve readability on the white AFTERTALE card */
+.aftertale .at-description {
+  color: #5a0000; /* darker body copy for contrast on white */
+}
+
+.aftertale .at-details h4 {
+  color: #990000; /* stronger heading color */
+}
+
+.aftertale .at-details li {
+  color: #4a0000; /* dark text for bullet items */
+}
+
+.aftertale .at-details li::before {
+  color: #cc0000; /* red chevron bullets to match theme */
 }
 
 /* Storyshift Styling */
 .storyshift-card {
-  border-color: #00ccaa;
-  background: linear-gradient(135deg, rgba(0, 60, 60, 0.9), rgba(20, 100, 100, 0.8));
+  /* Green & Gold theme */
+  border-color: #ffd700; /* gold outline */
+  background: linear-gradient(135deg, rgba(6, 40, 20, 0.92), rgba(14, 60, 30, 0.86));
 }
 
 .storyshift-card .au-title {
-  color: #66ffee;
-  text-shadow: 0 0 10px rgba(0, 204, 170, 0.5);
+  color: #ffd700; /* gold title */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
 .storyshift-card .au-subtitle {
-  color: #aaffee;
+  color: #c9f2a3; /* light green-gold accent */
+}
+
+/* Dreamtale Styling */
+.dreamtale-card {
+  border-color: #66ffcc; /* hopeful mint accent */
+  background: linear-gradient(135deg, rgba(10, 40, 30, 0.9), rgba(10, 10, 25, 0.85));
+  position: relative;
+}
+
+.dreamtale-card::after {
+  /* subtle starfield shimmer */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.06) 0, transparent 40%),
+              radial-gradient(circle at 80% 70%, rgba(102,255,204,0.08) 0, transparent 45%);
+  pointer-events: none;
+}
+
+.dreamtale-card .au-title {
+  color: #99ffdd; /* bright mint for Dream */
+  text-shadow: 0 0 12px rgba(102, 255, 204, 0.5);
+}
+
+.dreamtale-card .au-subtitle {
+  color: #c8fff1;
+}
+
+.dreamtale-card .au-details ul li::before {
+  /* mix of a star and crescent motif to echo hope vs nightmare */
+  content: "✦"; 
+  color: #66ffcc;
+}
+
+.dreamtale-card .au-theme {
+  background: rgba(0, 40, 30, 0.45);
+  border-left: 4px solid #66ffcc;
 }
 
 .sans-placeholder {
@@ -317,10 +669,20 @@
 
 /* AU/AT Explanation Styling */
 .intro-text h2 {
-  color: #ffff99;
+  /* Brighten and increase contrast for headings like
+     "★ What are Alternate Universes? ★" */
+  color: #fff06a; /* brighter golden yellow */
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
+  font-weight: 800;
+  /* subtle outline to keep yellow readable on any background */
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000,
+     0 0 8px rgba(255, 240, 106, 0.6);
 }
 
 .intro-text h3 {
@@ -450,11 +812,20 @@
 }
 
 .horrortale .at-theme {
-  border-left-color: #cc66cc;
+  border-left-color: #cc3333; /* dark red accent for Horrortale */
 }
 
 .lastbreath .at-theme {
   border-left-color: #66ccff;
+}
+
+/* Emphasize Dustbelief accent on theme callout */
+.dustbelief .at-theme {
+  border-left-color: #ffcc66;
+}
+
+.somethingnew .at-theme {
+  border-left-color: #66ffcc;
 }
 
 .timeline-note {
@@ -516,6 +887,241 @@
 
   .timeline-note {
     padding: 1.5rem;
+  }
+}
+
+/* --- Blending Universes: Colorful Cards --- */
+.blend-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 0 0;
+}
+
+.blend-card {
+  position: relative;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 14px;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  overflow: hidden;
+}
+
+.blend-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+.blend-card:focus {
+  outline: 3px solid #ffff99;
+  outline-offset: 2px;
+}
+
+.blend-header {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 0.75rem;
+}
+
+.blend-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0 0 0.25rem 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.blend-subtitle {
+  margin: 0;
+  font-style: italic;
+  color: #ddd;
+  letter-spacing: 0.3px;
+}
+
+.blend-content {
+  text-align: left;
+}
+
+.blend-description {
+  color: #eaeaea;
+  line-height: 1.7;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.blend-tagline {
+  margin-top: 0.75rem;
+  font-style: italic;
+  color: #ccccff;
+  text-align: center;
+}
+
+/* OuterDust theme */
+.outerdust-card {
+  border-color: #66ccff;
+  background: linear-gradient(135deg, rgba(0, 30, 80, 0.85), rgba(20, 0, 60, 0.75));
+}
+
+.outerdust-card .blend-title {
+  color: #99ddff;
+}
+
+.outerdust-card .features-list li::before {
+  content: "✦";
+  color: #66ccff;
+}
+
+/* StorySwap theme */
+.storyswap-card {
+  border-color: #ff99dd;
+  background: linear-gradient(135deg, rgba(80, 0, 50, 0.85), rgba(20, 20, 80, 0.75));
+}
+
+.storyswap-card .blend-title {
+  color: #ffb3e6;
+}
+
+.storyswap-card .features-list li::before {
+  content: "◆";
+  color: #ff99dd;
+}
+
+/* Dustswap theme (already present above) – additional themes below */
+
+/* Dustdust theme */
+.dustdust-card {
+  border-color: #ff4444;
+  background: linear-gradient(135deg, rgba(70, 0, 0, 0.9), rgba(100, 10, 10, 0.8));
+}
+
+.dustdust-card .blend-title {
+  color: #ff9999;
+}
+
+.dustdust-card .features-list li::before {
+  content: "✖";
+  color: #ff6666;
+}
+
+/* Swapfell theme */
+.swapfell-card {
+  border-color: #cc2233;
+  background: linear-gradient(135deg, rgba(40, 0, 0, 0.9), rgba(60, 0, 20, 0.8));
+}
+
+.swapfell-card .blend-title {
+  color: #ff6677;
+}
+
+.swapfell-card .features-list li::before {
+  content: "▸";
+  color: #ff3344;
+}
+
+/* Fellswap theme (distinct from Swapfell) */
+.fellswap-card {
+  border-color: #ff6699;
+  background: linear-gradient(135deg, rgba(60, 0, 20, 0.9), rgba(20, 0, 20, 0.8));
+}
+
+.fellswap-card .blend-title {
+  color: #ff99bb;
+}
+
+.fellswap-card .features-list li::before {
+  content: "➤";
+  color: #ff88aa;
+}
+
+/* OuterShift theme */
+.outershift-card {
+  border-color: #66ddff;
+  background: linear-gradient(135deg, rgba(0, 25, 60, 0.9), rgba(10, 10, 50, 0.8));
+  position: relative;
+}
+
+.outershift-card .blend-title {
+  color: #a6e8ff;
+}
+
+.outershift-card .features-list li::before {
+  content: "✦";
+  color: #66ddff;
+}
+
+/* Dustswap theme */
+.dustswap-card {
+  border-color: #ff9966;
+  background: linear-gradient(135deg, rgba(70, 0, 30, 0.85), rgba(15, 40, 80, 0.75));
+}
+
+.dustswap-card .blend-title {
+  color: #ffbb99;
+}
+
+.dustswap-card .features-list li::before {
+  content: "▸";
+  color: #ff9966;
+}
+
+/* Dusttrust theme */
+.dusttrust-card {
+  border-color: #ffd27f;
+  background: linear-gradient(135deg, rgba(60, 30, 0, 0.85), rgba(20, 60, 60, 0.75));
+}
+
+.dusttrust-card .blend-title {
+  color: #ffe0a8;
+}
+
+.dusttrust-card .features-list li::before {
+  content: "✚";
+  color: #ffd27f;
+}
+
+/* Storyfell theme */
+.storyfell-card {
+  border-color: #ff4444;
+  background: linear-gradient(135deg, rgba(80, 0, 0, 0.85), rgba(30, 0, 20, 0.75));
+}
+
+.storyfell-card .blend-title {
+  color: #ff7777;
+}
+
+.storyfell-card .features-list li::before {
+  content: "♠";
+  color: #ff4444;
+}
+
+/* Dusttale: The Last Genocide theme */
+.lastgenocide-card {
+  border-color: #66ccff;
+  background: linear-gradient(135deg, rgba(10, 20, 60, 0.85), rgba(60, 10, 20, 0.75));
+}
+
+.lastgenocide-card .blend-title {
+  color: #99ddff;
+}
+
+.lastgenocide-card .features-list li::before {
+  content: "✖";
+  color: #66ccff;
+}
+
+/* Responsive adjustments for blend cards */
+@media (max-width: 768px) {
+  .blend-card {
+    padding: 1.25rem;
+  }
+  .blend-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blend-card {
+    padding: 1rem;
   }
 }
 
@@ -732,6 +1338,23 @@
 }
 .mv-card.hyperdust:hover {
   box-shadow: 0 12px 30px rgba(255, 162, 0, 0.28);
+}
+
+/* DustDustDust theme — purple & red */
+.mv-card.dustdustdust {
+  border-color: #b3006b; /* deep magenta-red border */
+  background: linear-gradient(135deg, rgba(28, 0, 35, 0.95), rgba(60, 0, 18, 0.9));
+  position: relative;
+}
+.mv-card.dustdustdust .mv-title {
+  color: #ff4da6; /* hot pink highlight for intensity */
+  text-shadow: 0 0 8px rgba(255, 77, 166, 0.35);
+}
+.mv-card.dustdustdust .mv-details h4 {
+  color: #ff94c9; /* lighter pink for headings inside */
+}
+.mv-card.dustdustdust:hover {
+  box-shadow: 0 12px 30px rgba(179, 0, 107, 0.35);
 }
 
 /* M87 Sans theme */
